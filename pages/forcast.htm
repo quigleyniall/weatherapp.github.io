@@ -3,29 +3,21 @@
 
 
 <div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2 class="panel-title">Forecast for {{ city }}</h2>
-            </div>
-            <div class="panel-body">
-                Main Decription: {{ weatherResult.weather[0].description }}
+    <div class="col-md-12 text-center">
 
-            </div>
-            <div class="panel-body">
+                <h1>Forecast for {{ city }}</h1>
 
-                Temp: {{ convertToCelsius(weatherResult.main.temp) }} C
 
-            </div>
-            <div class="panel-body">
-                Wind Speed: {{ weatherResult.wind.speed }} km
+                <h1>{{ weatherResult.weather[0].description }}</h1>
 
-            </div>
-            <div class="panel-body">
-                Icon: <img src='https://openweathermap.org/img/w/{{weatherResult.weather[0].icon}}.png'>
-            </div>
 
-        </div>
+                <h1>{{ convertToCelsius(weatherResult.main.temp) }} C</h1>
+
+
+        <div class="icon"></div><img src='https://openweathermap.org/img/w/{{weatherResult.weather[0].icon}}.png'></div>
+
+
+
     </div>
 
 
