@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="pages/forecast.css"/>
+<p><a href="#/">Back to Search!</a></p>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Forecast for {{ city }}</h2>
+            </div>
+            <div class="panel-body">
+                Main Decription: {{ weatherResult.weather[0].description }}
+
+            </div>
+            <div class="panel-body">
+
+                Temp: {{ convertToCelsius(weatherResult.main.temp) }} C
+
+            </div>
+            <div class="panel-body">
+                Wind Speed: {{ weatherResult.wind.speed }} km
+
+            </div>
+            <div class="panel-body">
+                Icon: <img src='https://openweathermap.org/img/w/{{weatherResult.weather[0].icon}}.png'>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

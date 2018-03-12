@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="pages/home.css">
+<div class="row" ng-controller="homeController">
+    <h1>Quick and Easy way to find out the weather, no matter  what the location!</h1>
+    <div class="col-md-6 col-md-offset-3">
+        <h4>Forecast By City</h4>
+        <form ng-submit="submit()">
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="city" />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Get forecast"></input>
+        </form>
+        </div>
+
+    </div>
+<div class="icons">
+    <img src="http://openweathermap.org/img/w/01d.png">
+    Sunny
+    <img src="http://openweathermap.org/img/w/02d.png">
+    Few Clouds
+    <img src="http://openweathermap.org/img/w/03d.png">
+    Scattered Clouds
+    <img src="http://openweathermap.org/img/w/04d.png">
+    Broken Clouds
+    <img src="http://openweathermap.org/img/w/09d.png">
+    Shower Rain
+    <img src="http://openweathermap.org/img/w/10d.png">
+    Rain
+    <img src="http://openweathermap.org/img/w/11d.png">
+    Thunderstorm
+    <img src="http://openweathermap.org/img/w/13d.png">
+    Snow
+    <img src="http://openweathermap.org/img/w/50d.png">
+    Mist
+</div>
