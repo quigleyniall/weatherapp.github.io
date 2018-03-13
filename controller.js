@@ -33,9 +33,14 @@ weatherApp.controller('forecastController', ['$http', '$scope', '$resource', 'we
     $http.jsonp("https://api.openweathermap.org/data/2.5/weather?q="+$scope.city+"&APPID=921e5afc8e157d0a9c98033e4e14f16b&callback=JSON_CALLBACK").success(function(data) {
         $scope.weatherResult = data;
         console.log(data);
-        $(window).width();
-        var x=(screen.width);
-        if(x < 1000) {
+
+
+
+
+            $(window).width();
+            var x=(screen.width);
+            console.log(x);
+        if(x > 800) {
             if ($scope.weatherResult.weather[0].main == 'Clouds') {
                 $('body').css('background-image', 'url(https://images.unsplash.com/photo-1421081177127-339f586c9b49?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=380980f0fdd19c7d4cd5a34384a8cff0&auto=format&fit=crop&w=749&q=80)');
             }
