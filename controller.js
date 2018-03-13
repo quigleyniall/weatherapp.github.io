@@ -34,9 +34,7 @@ weatherApp.controller('forecastController', ['$http', '$scope', '$resource', 'we
         $scope.weatherResult = data;
         console.log(data);
 
-
-
-
+        //get screen width to determine to put picture in
             $(window).width();
             var x=(screen.width);
             console.log(x);
@@ -49,6 +47,15 @@ weatherApp.controller('forecastController', ['$http', '$scope', '$resource', 'we
             }
             if ($scope.weatherResult.weather[0].main == 'Clear') {
                 $('body').css('background-image', 'url(https://images.unsplash.com/photo-1507004990372-a4364d297789?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1981cf566974d240459e7d9c12695ca&auto=format&fit=crop&w=666&q=80)');
+            }
+            if ($scope.weatherResult.weather[0].main == 'Snow') {
+                $('body').css('background-image', 'url(https://images.unsplash.com/photo-1513210264448-4adf37672cb8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=92450ce6c76e0d7d3dfd964a61530982&auto=format&fit=crop&w=667&q=80)');
+            }
+            if ($scope.weatherResult.weather[0].main == 'Mist') {
+                $('body').css('background-image', 'url(https://images.unsplash.com/photo-1442606688842-a421432a776f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76428d1343c4aabe3eb9284f1d2923a1&auto=format&fit=crop&w=476&q=80)');
+            }
+            if ($scope.weatherResult.weather[0].main == 'Thunderstorm') {
+                $('body').css('background-image', 'url(https://images.unsplash.com/photo-1482005253821-5d6a2c685879?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ddad2e18d75348098633d2016efe1f0d&auto=format&fit=crop&w=998&q=80)');
             }
         }
         //    convert first letter to capital

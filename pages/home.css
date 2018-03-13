@@ -5,3 +5,8 @@ h1{
 .icons{
     padding-top: 10vw;
 }
+/*@media (max-width:500px) {*/
+    /*h1 {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
